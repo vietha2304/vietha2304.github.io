@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width">
+    <title>Contact Us Form</title>
+    <style>
+       input, textarea, button {width: 100%; margin-bottom: 15px; box-sizing: border-box;}
+       input {padding-bottom: 4px;}
+       html { background-color: rgb(138, 171, 233);} 
+       body { background-color: rgb(247, 163, 229); width: 50%; margin: 25%; padding: 10px; border: 10px solid rgb(69, 71, 72);}
+       form { margin: -20px; padding: 40px; box-sizing: border-box; text-align: center;}
+       div {max-width: 850px; margin-left: auto; margin-right: auto; }
+       .h11 { background-color: rgba(255, 255, 255, 0.919); color: rgb(0, 0, 0); text-align: center; padding: 10px;}
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="h11">Contact Us</h1>
+        <form method="post" action="/contact-form-data/">
+        <input name="readername" type="text" placeholder="Yourname" required/>
+        <input name="readeremail" type="text" placeholder="Youremail" required/ >
+        <textarea name="smessage" id="mess" cols="5" rows="5" placeholder="Message" required></textarea>
+        <button type="submit">Send Message</button>
+        </form>
+    </div>
+</body>
+</html>
