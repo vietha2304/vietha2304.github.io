@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Create student list with CSS3</title>
+<style type="text/css">
+.StudentDetails {display: none;}
+.Student img {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    box-shadow: 30px 30px 60px #aaa;
+}
+.StudentName {font-weight: bold;}
+.StudentID:before {content: " - ";}
+.Student {
+    text-align: center;
+    width: 150px;
+    margin: 0px 20px;
+    float: left;
+    cursor: pointer;
+}
+.Student:hover .StudentDetails {display: block;}
+</style>
+</head>
+<body>
+<div>
+    <div class="Student">
+        <img src="https://i.pinimg.com/564x/6b/ba/22/6bba22e7836b6503c1f3a0a429dbb92f.jpg" />
+        <div class="StudentDetails">
+            <span class="StudentName">Trần Hà Anh</span>
+            <span class="StudentID">23070526</span>
+        </div>
+    </div>
+    <div class="Student">
+        <img src="https://i.pinimg.com/564x/6d/3c/e3/6d3ce33025fefbe06486b8d53b6e7ea2.jpg" />
+        <div class="StudentDetails">
+            <span class="StudentName">Đỗ Lê Huyền Trang</span>
+            <span class="StudentID">23070003</span>
+        </div>
+    </div>
+    <div class="Student">
+        <img src="https://i.pinimg.com/564x/25/95/4b/25954b150ae39eba97d880244499d19a.jpg" />
+        <div class="StudentDetails">
+            <span class="StudentName">Nguyễn Việt Hà</span>
+            <span class="StudentID">23070375</span>
+        </div>
+    </div>
+    <div class="Student">
+        <img src="https://i.pinimg.com/564x/47/2e/88/472e8814226087eefe4a580999d6a0cc.jpg" />
+        <div class="StudentDetails">
+            <span class="StudentName">Trần Minh Đức</span>
+            <span class="StudentID">23070223</span>
+        </div>
+    </div>
+</div>
+</body>
+</html>
